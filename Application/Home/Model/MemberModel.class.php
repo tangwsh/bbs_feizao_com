@@ -168,12 +168,12 @@ class MemberModel extends Model
         $this->autoRegister();
     }
 
+    //与网站打通
     public function autoRegister() {
         if (isset($_COOKIE['shared_session'])) {
-            $curl = new Curl;
-            $ret = json_decode($curl->get('http://www.feizao001.com/user/getSessionInfo/session_id/' . $_COOKIE['shared_session']), true);
+            $ret = json_decode(file_get_contents('http://www.efeizao.com/user/getSessionInfo/session_id/' . $_COOKIE['shared_session']), true);
             if ($ret['errno'] != 0) {
-                return;
+                return false;
             }
             $userInfo = $ret['data'];
             $username = 'AUTOREG_' . $userInfo['id'];
@@ -187,8 +187,13 @@ class MemberModel extends Model
                 $user = $this->field(true)->find($uid);
 
             }
+            else {
+                return false;
+            }
             $this->autoLogin($user);
+            return $user['uid'];
         }
+        return false;
     }
 
     public function getCookieUid()

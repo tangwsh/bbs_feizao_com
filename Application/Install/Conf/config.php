@@ -26,7 +26,7 @@ return array(
         '__JS__' => __ROOT__ . '/Public/' . MODULE_NAME . '/js',
     ),
     /* URL配置 */
-    'URL_MODEL' => 3, //URL模式
+    'URL_MODEL' => 2, //URL模式
 
 
 );

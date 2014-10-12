@@ -14,7 +14,10 @@ class ConfigController extends BaseController
 {
     public function _initialize()
     {
+        $uid = D('Home/Member')->autoRegister();
+
         parent::_initialize();
+
         if (!is_login()) {
             $this->error('请登陆后再访问本页面。');
         }
@@ -79,6 +82,28 @@ class ConfigController extends BaseController
             $this->getExpandInfo();
             $this->display();
         }
+
+    }
+
+    //网站同步用户数据
+    public function syncUserInfo($nickname = null, $headPic = null) {
+        if ($nickname) {
+            $user['uid'] = get_uid();
+            $user['nickname'] = $nickname;
+            if (D('Home/Member')->save($user)) {
+                clean_query_user_cache(get_uid(), array('nickname', 'sex', 'signature', 'email', 'pos_province', 'pos_city', 'pos_district', 'pos_community'));
+            }
+            else {
+                $this->error('同步失败:' . D('Home/Member')->getError(), '', true);
+            }
+        }
+        if ($headPic) {
+            if (!D('Addons://Avatar/Avatar')->saveAvatar(get_uid(), $headPic)) {
+                $this->error('同步失败:' . D('Addons://Avatar/Avatar')->getError(), '', true);
+            }
+        }
+        
+        $this->success('同步成功', '', true);
 
     }
 
