@@ -18,7 +18,7 @@
   background: #efefef;
 }
 .group_types .active {
-  background: #03ae87;
+  background: #24b6e2;
   color: #fff !important;
 }
 .group_lists hr {
@@ -222,7 +222,7 @@ background-image: url("../images/gbg.png");*/
   font-weight: normal;
 }
 .hot_post dt a:hover {
-  color: #03ae87 !important;
+  color: #24b6e2 !important;
 }
 .group_group_name {
   font-size: 1.2em;
@@ -252,7 +252,7 @@ background-image: url("../images/gbg.png");*/
 .post_content .ribbion-green1 {
   position: absolute;
   right: 0px;
-  background: #03ae87;
+  background: #24b6e2;
   width: 75px;
   top: 0;
   height: 25px;
@@ -424,7 +424,7 @@ background-image: url("../images/gbg.png");*/
 .group_tab .nav-tabs > li.active > a:focus {
   background: none;
   border: none;
-  border-bottom: 2px solid #03ae87;
+  border-bottom: 2px solid #24b6e2;
 }
 .group_tab .nav-tabs > li > a {
   border-radius: 0;
@@ -433,7 +433,7 @@ background-image: url("../images/gbg.png");*/
 .group_tab .nav-tabs > li > a:hover {
   background: none;
   border: none;
-  border-bottom: 2px solid #03ae87;
+  border-bottom: 2px solid #24b6e2;
 }
 .group_tab .nav-tabs {
   border-bottom: none;
@@ -490,7 +490,7 @@ background-image: url("../images/gbg.png");*/
 }
 .btn-primary-tie {
   color: #ffffff;
-  background-color: #03ae87;
+  background-color: #24b6e2;
   border-color: #039574;
 }
 .btn-primary-tie:hover {
@@ -521,7 +521,7 @@ background-image: url("../images/gbg.png");*/
   line-height: 23px;
 }
 .group-detail .group_tags a:hover {
-  color: #03ae87 !important;
+  color: #24b6e2 !important;
 }
 .group_tags a {
   border-radius: 4px;

@@ -294,7 +294,7 @@ hr {
   color: #333333;
   border: 3px solid transparent;
   border-width: 3px 0;
-  border-bottom-color: #03ae87;
+  border-bottom-color: #24b6e2;
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -343,7 +343,7 @@ hr {
   padding: 5px 10px;
 }
 .event_type .cur {
-  background: #03ae87;
+  background: #24b6e2;
   color: #fff;
   border-radius: 3px;
 }

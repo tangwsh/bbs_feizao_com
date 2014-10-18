@@ -39,12 +39,12 @@
   background: none;
   color: #999;
   font-size: 16px;
-  border-bottom: 3px solid #03ae87;
+  border-bottom: 3px solid #24b6e2;
 }
 .sub_menu .navbar-default .navbar-nav > .open > a,
 .sub_menu .navbar-default .navbar-nav > .open > a:hover,
 .sub_menu .navbar-default .navbar-nav > .open > a:focus {
-  border-bottom: 3px solid #03ae87;
+  border-bottom: 3px solid #24b6e2;
   background: white!important;
 }
 .sub_menu .navbar-default .navbar-nav > li > a {
@@ -69,7 +69,7 @@ body {
   word-break: break-word;
 }
 a {
-  color: #616161;
+  color: #24b6e2;
 }
 a:hover {
   color: #919191;
@@ -297,7 +297,7 @@ h2 {
   color: #333333;
 }
 .link-primary {
-  color: #03ae87;
+  color: #24b6e2;
 }
 .link-muted {
   color: #555555;
@@ -917,8 +917,8 @@ General list for item with image
 }
 .friend_panel .btn-pull {
   position: absolute;
-  border: 1px solid #029775;
-  background: #03AE87;
+  border: 1px solid #24b6e2;
+  background: #24b6e2;
   padding: 15px 7px;
   border-right: 0;
   margin-right: 0;
@@ -1142,7 +1142,7 @@ a {
   color: #848484;
 }
 a:hover {
-  color: #03ae87;
+  color: #24b6e2;
 }
 /*新界面按钮ui风格重写结束*/
 /*顶栏*/
@@ -1209,7 +1209,6 @@ a:hover {
 .logo_bar {
   position: relative;
   width: 100%;
-  height: 84px;
   background: url('../images/logobar_bg.png');
 }
 .logo_bar .form-control {
@@ -1222,7 +1221,7 @@ a:hover {
   padding: 7px 12px;
 }
 .logo {
-  margin-top: 25px;
+  padding:20px 0;
 }
 /*logo栏end*/
 /*导航栏*/
@@ -1244,7 +1243,7 @@ a:hover {
   position: relative;
 }
 .nav_bar .navbar-toggle {
-  background-color: #03ae87;
+  background-color: #24b6e2;
   color: white;
   margin-top: 12px;
 }
@@ -1258,13 +1257,13 @@ a:hover {
   margin-left: -6px;
 }
 .nav_bar .active a {
-  color: #03ae87;
+  color: #24b6e2;
 }
 .nav_bar .nav > li > a:hover,
 .nav_bar .nav > li > a:focus {
   text-decoration: none;
   background-color: transparent;
-  color: #03ae87;
+  color: #24b6e2;
 }
 /*导航栏end*/
 /*底部栏*/
